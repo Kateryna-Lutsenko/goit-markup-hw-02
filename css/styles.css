@@ -1,0 +1,126 @@
+:root {
+  --primary-font-family: 'Roboto'
+  --primary-text-color: #757575;
+  --title-text-clor: #212121;
+  --accent-color: #2196F3
+  --primari-bg-color:
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-clor: #ffffff;
+  color: #000000;
+}
+
+/* робить чорними усі посилання */
+a {
+  color: #000000;
+}
+
+/* прибирає маркери списку */
+ul {
+  list-style: none;
+}
+
+/* nav */
+.nav {
+  color: #000000;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  }
+
+.navagation-color {
+color: #2196F3;
+}
+
+.nav-list
+
+
+.link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.contacts-mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;l
+  ine-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.navagation-color {
+  color:#2196F3;
+}
+
+.nav-list {
+  position: absolute;
+  width: 294px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+
+.link-studio {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.link-portfolio {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.link-contacts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.contacts-mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196F3;
+
+}
