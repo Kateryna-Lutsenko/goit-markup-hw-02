@@ -1,126 +1,219 @@
+/* перемінні */
 :root {
-  --primary-font-family: 'Roboto'
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-text-color: #757575;
-  --title-text-clor: #212121;
-  --accent-color: #2196F3
-  --primari-bg-color:
+  --secondary-lite-txt: #ffffff;
+  --secondary-text-color: #212121;
+  --logo-txt-color: #000000;
+  --accent-text: #2196f3;
+  --button-accent: #188ce8;
+
+  --primary-light-bg: #ffffff;
+  --secondary-light-bg: F5F4FA;
+  --primary-dark-bg: #2f303a;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  background-clor: #ffffff;
-  color: #000000;
+  background-color: var(--primary-light-bg);
+  color: var(--primary-text-color);
 }
 
-/* робить чорними усі посилання */
-a {
-  color: #000000;
-}
-
-/* прибирає маркери списку */
-ul {
+.list {
   list-style: none;
 }
 
-/* nav */
-.nav {
-  color: #000000;
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  
+.link {
+  text-decoration: none;
+}
+
+.color-web {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2px;
   letter-spacing: 0.03em;
-  }
-
-.navagation-color {
-color: #2196F3;
+  color: var(--accent-text);
 }
 
-.nav-list
+.color-studio {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2px;
+  letter-spacing: 0.03em;
+  color: var(--logo-txt-color);
+}
 
-
-.link {
+/* nav */
+.nav-link {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
-.contacts-mail {
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-text);
+}
+
+.contacts-mail,
+.contacts-tel {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;l
-  ine-height: 16px;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-}
-.navagation-color {
-  color:#2196F3;
-}
-
-.nav-list {
-  position: absolute;
-  width: 294px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-}
-
-.link-studio {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
-.link-portfolio {
+.contacts-tel:hover,
+.contacts-tel:focus {
+  color: var(--accent-text);
+}
+
+.contacts-mail:hover,
+.contacts-mail:focus {
+  color: var(--accent-text);
+}
+
+/* hero */
+
+.hero-title {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4x;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-lite-txt);
 }
 
-.link-contacts {
+.hero {
+  background: #2f303a;
+}
+
+.button {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-lite-txt);
+  background-color: var(--accent-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
-.contacts-mail {
+.button:hover,
+.button:focus {
+  background: var(--button-accent);
+}
+
+/* особенности */
+.features-title-item {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #2196F3;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 
+.features-about {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196F3;
+/* what we doing */
+.title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
 
+.team {
+  background: #f5f4fa;
+}
+
+.team-member {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.position {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--primary-dark-bg);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+  background-color: var(--primary-dark-bg);
+}
+
+.address-item {
+  font-style: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.address-link {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-lite-txt);
+}
+
+/* :root {
+  --primary-font-family: 'Roboto';
+  --secondary-font-family: 'Raleway';
+  
+  1;
+ 
+  --primari-bg-color:
+  --
+} */
+
+/* вебінар */
+/* font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif; */
+
+/* норм
+ */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
